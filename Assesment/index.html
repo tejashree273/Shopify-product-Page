@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="product-page">
+
+    <!-- Product Gallery -->
+    <section class="product-gallery">
+      <div class="main-image">
+        <img id="mainProductImage" src="assets/m1.jpg" alt="Main Product Image" height="500px"/>
+      </div>
+      <div class="thumbnail-gallery">
+        <img src="assets/m2.jpg" alt="Thumbnail 1" class="thumbnail active" />
+        <img src="assets/m3.jpg" alt="Thumbnail 2" class="thumbnail" />
+        <img src="assets/m2.jpg" alt="Thumbnail 3" class="thumbnail" />
+        <img src="assets/m4.jpg" alt="Thumbnail 4" class="thumbnail" />
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+      <h1 class="product-title">Women party wear frock</h1>
+      <p class="product-price">$200</p>
+
+      <!-- Variants -->
+
+        <div class="variant-sizes">
+          <label for="sizeSelect">Size:</label>
+          <select id="sizeSelect">
+          
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            
+          </select>
+          <button id="sizeChartBtn">Size Chart</button>
+        </div>
+      </div>
+
+
+      <section class="product-variants">
+  <h3>Select Colour:</h3>
+  <div class="color-swatches">
+    <button class="swatch" data-color="Red" style="background-color: red;"></button>
+    <button class="swatch" data-color="Blue" style="background-color: blue;"></button>
+    <button class="swatch" data-color="Green" style="background-color: green;"></button>
+  </div>
+
+  <h3>Select Size:</h3>
+  <select id="size-select">
+    <option value="S">Small</option>
+    <option value="M">Medium</option>
+    <option value="L">Large</option>
+  </select>
+
+
+  <div class="selected-variant">
+    <p>Selected: <span id="selected-color">None</span> / <span id="selected-size">None</span></p>
+  </div>
+
+  <button id="compare-btn">Compare Colours</button>
+</section>
+
+<!-- Compare Modal -->
+<div id="compare-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Compare Colours</h3>
+    <div id="compare-boxes"></div>
+  </div>
+</div>
+
+      <!-- Tabs  -->
+
+    <section class="product-tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="description">Description</button>
+    <button class="tab-btn" data-tab="info">Product Information</button>
+    <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+  </div>
+
+  <div class="tab-content active" id="description">
+    <p>This is a stylish and comfortable dress made from soft, breathable fabric. Perfect for all seasons and occasions.</p>
+  </div>
+
+  <div class="tab-content" id="info">
+    <ul>
+      <li>Material: 100% Cotton</li>
+      <li>Washable: Machine wash cold</li>
+      <li>Available Sizes: S, M, L, XL</li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="shipping">
+    <p>Free shipping on orders over $50. Estimated delivery time: 5-7 business days. Express options available at checkout.</p>
+  </div>
+</section>
+
+    <!-- Pair Well With -->
+    <section class="pair-well">
+      <h2>Pairs Well With</h2>
+      <div class="carousel">
+        <div class="product-card">
+            <img src="assets/bag.jpg" alt="Product 1" />
+            <h3>Leather Bag</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/shoes.jpg" alt="Product 2" />
+            <h3>Casual Heels</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/glasses.jpg" alt="Product 3" />
+            <h3>Sunglasses</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/earrings.jpg" alt="Product 1" />
+            <h3>Earrings</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/bracelet.jpg" alt="Product 2" />
+            <h3>Bracelet</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/necklace.jpg" alt="Product 3" />
+            <h3>/necklace</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/hat2.jpg" alt="Product 1" />
+            <h3>Hat</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/bpack.jpg" alt="Product 2" />
+            <h3>Bag pack</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/glasses.jpg" alt="Product 3" />
+            <h3>Sunglasses</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+          </div>
+      </div>
+    </section>
+
+    <!-- Bundle Suggestion -->
+    <section class="bundle-suggestion">
+      <h2>Buy These Together</h2>
+      <div class="bundle-grid">
+    <div class="product-card">
+      <img src="assets/summerD.jpg" alt="Dress" />
+      <h3>Summer Dress</h3>
+      <p>$59.99</p>
+    </div>
+    <div class="plus-sign">+</div>
+    <div class="product-card">
+      <img src="assets/hat.jpg" alt="Hat" />
+      <h3>Beach Hat</h3>
+      <p>$25.99</p>
+    </div>
+    <div class="plus-sign">+</div>
+    <div class="product-card">
+      <img src="assets/sandals.jpg" alt="Sandals" />
+      <h3>Comfort Sandals</h3>
+      <p>$34.99</p>
+    </div>
+  </div>
+
+  <div class="bundle-total">
+    <p>Total: <strong>$120.97</strong></p>
+    <button onclick="addBundleToCart()">Add Bundle to Cart</button>
+  </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h2>Related Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+            <img src="assets/img1.jpg" alt="Related Product 1" />
+            <h3>Red Ruffle Long Frock</h3>
+            <p>$79.99</p>
+            <button>Add to Cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="assets/img2.jpg" alt="Related Product 2" />
+            <h3>Stunning Western Wear</h3>
+            <p>$149.99</p>
+            <button>Add to Cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="assets/img3.jpg" alt="Related Product 3" />
+            <h3>Brown Maxi Dress</h3>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="assets/img4.jpg" alt="Related Product 4" />
+            <h3>White A-line dress
+            </h3>
+            <p>$89.99</p>
+            <button>Add to Cart</button>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div id="sizeChartModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Size Chart</h2>
+      <table>
+        <tr><th>Size</th><th>Chest</th><th>Length</th></tr>
+        <tr><td>S</td><td>34"</td><td>25"</td></tr>
+        <tr><td>M</td><td>38"</td><td>27"</td></tr>
+        <tr><td>L</td><td>42"</td><td>29"</td></tr>
+        <tr><td>XL</td><td>44"</td><td>31"</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
